@@ -29,3 +29,6 @@ session3
 
 session4
 	Transactions
+
+session5
+	SQL Functions
