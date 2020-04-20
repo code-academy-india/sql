@@ -20,3 +20,6 @@ Topics
 
 session1
 	Configure Database Server
+
+session2
+	Select Statements
