@@ -32,3 +32,6 @@ session4
 
 session5
 	SQL Functions
+
+session6
+	DDL
