@@ -23,3 +23,6 @@ session1
 
 session2
 	Select Statements
+
+session3
+	DML

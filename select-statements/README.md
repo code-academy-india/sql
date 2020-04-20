@@ -46,5 +46,65 @@ Restric rows using WHERE clause
 	SELECT *
 	FROM employees WHERE manager_id != 0;	
 
+Restric rows using multiple conditions
+
+	SELECT *
+	FROM employees 
+	WHERE department_id=60 AND salary>5000.00;
+
+Conditional operators
+	
+BETWEEN operator
+	SELECT *
+	FROM employees 
+	WHERE salary BETWEEN 5000 AND 8000;
+
+IN operator
+	SELECT *
+	FROM employees 
+	WHERE employee_id IN ( 111, 112 );
+
+LIKE operator
+	SELECT *
+	FROM employees
+	WHERE first_name LIKE 'D%';
 
 
+	pattern with position matching
+	all employees who has 'i' in 4 th place in their first_name
+	SELECT *
+	FROM employees
+	WHERE first_name LIKE 'D__i%';
+
+LIMIT rows
+
+So far all sql select statements are returning all rows from table.This may not be possible
+in scenarios like prod environment. MySQL provides facility to limit rows sent to user.
+Read or get only 4 rows from employees table.
+	
+	SELECT *
+	FROM employees LIMIT 4;
+
+
+DISTINCT clause
+
+Get all unique column values from a table, satisfying all conditions in sql query.
+		
+	SELECT distinct job_id
+	FROM employees ;
+		
+	DISTINCT with multiple columns
+		
+	SELECT distinct department_id, job_id
+	FROM employees;
+
+
+ALIAS names for tables and columns
+
+	SELECT employee_id AS empid
+	FROM employees;
+	
+	SELECT employee_id AS empid
+	FROM employees emp;
+	
+	
