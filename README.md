@@ -35,3 +35,6 @@ session5
 
 session6
 	DDL
+
+session7
+	Joins
