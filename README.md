@@ -38,3 +38,6 @@ session6
 
 session7
 	Joins
+
+session8
+	Indexes
